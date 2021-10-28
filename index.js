@@ -2,11 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-// let port = process.env.PORT;
-// if (port == null || port == "") {
-//     port = 8000;
-// }
-let port = 8080;
+const port = process.env.PORT || 8080;
 
 const Firestore = require('@google-cloud/firestore');
 
