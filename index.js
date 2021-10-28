@@ -8,7 +8,8 @@ const Firestore = require('@google-cloud/firestore');
 
 const db = new Firestore({
     projectId: 'avancerade-webbteknologier',
-    keyFilename: 'auth/avancerade-webbteknologier-65f4f04817be.json',
+    //keyFilename: 'auth/avancerade-webbteknologier-65f4f04817be.json',
+    keyFilename: '/auth/firestore-api-key',
 });
 { 1 }
 
