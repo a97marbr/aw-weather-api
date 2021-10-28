@@ -103,35 +103,35 @@ async function fetchClimatecode(climatecode) {
 
 // Routes
 
-app.get('/', function (req, res) {
-    res.send('Weather API<br><br>/api/locations<br>/api/location/:location<br>/api/climatecodes<br>/api/climatecode/:climatecode');
-})
+// app.get('/', function (req, res) {
+//     res.send('Weather API<br><br>/api/locations<br>/api/location/:location<br>/api/climatecodes<br>/api/climatecode/:climatecode');
+// })
 
-app.get('/api/locations', async function (req, res) {
-    const locations = await fetchAllLocations();
-    res.json(locations);
-})
+// app.get('/api/locations', async function (req, res) {
+//     const locations = await fetchAllLocations();
+//     res.json(locations);
+// })
 
-app.get('/api/location/:location', async function (req, res) {
-    const location = req.params.location;
-    const locationData = await fetchLocation(location);
-    res.json(locationData);
-})
+// app.get('/api/location/:location', async function (req, res) {
+//     const location = req.params.location;
+//     const locationData = await fetchLocation(location);
+//     res.json(locationData);
+// })
 
-app.get('/api/climatecodes', async function (req, res) {
-    const climatecodes = await fetchAllClimatecodes();
-    res.json(climatecodes);
-})
+// app.get('/api/climatecodes', async function (req, res) {
+//     const climatecodes = await fetchAllClimatecodes();
+//     res.json(climatecodes);
+// })
 
-app.get('/api/climatecode/:climatecode', async function (req, res) {
-    const climatecode = req.params.climatecode;
-    const climatecodeData = await fetchClimatecode(climatecode);
-    res.json(climatecodeData);
-})
+// app.get('/api/climatecode/:climatecode', async function (req, res) {
+//     const climatecode = req.params.climatecode;
+//     const climatecodeData = await fetchClimatecode(climatecode);
+//     res.json(climatecodeData);
+// })
 
-var server = app.listen(port, function () {
-    var host = server.address().address
-    var port = server.address().port
+// var server = app.listen(port, () => {
+//     var host = server.address().address
+//     var port = server.address().port
 
-    console.log("Example app listening at http://%s:%s", host, port)
-})
+//     console.log("Example app listening at http://%s:%s", host, port)
+// })
