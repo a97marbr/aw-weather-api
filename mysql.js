@@ -9,8 +9,8 @@ const firestore = new Firestore({
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'sqllab',
-    password: 'Tomten2009',
+    user: 'DBUSER',
+    password: 'DBPASS',
     database: 'weather'
 });
 
